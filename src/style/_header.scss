@@ -1,7 +1,6 @@
 /*-------------------
         Header
 ---------------------*/
-
 .main-header {
     position: relative;
     
@@ -137,8 +136,16 @@
     a {
         display: block;
         @include font(24px, 29px, 700);
+
+        svg {
+            display: none;
+            fill: #fff;
+            path {
+                fill: #fff;
+            }
+        }
     }
-    span {
+    & > span {
         position: absolute;
         right: 0;
     }
@@ -146,5 +153,10 @@
 
 .main-header__title {
     margin: 0;
+}
+
+.main-header__menu-toggle {
+    display: none;
+    outline: none;
 }
 

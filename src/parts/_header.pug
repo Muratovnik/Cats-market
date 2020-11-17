@@ -1,6 +1,9 @@
 header.main-header
     .container
         .main-header__wrap
+            button.main-header__menu-toggle.hamburger.hamburger--squeeze.js-menu-toggle
+                span.hamburger-box
+                    span.hamburger-inner
             a.main-header__logo(href="index.html")
                 img(src="img/header/logo.svg", alt="Logotype")
             nav.main-header__nav
@@ -12,8 +15,10 @@ header.main-header
                     li
                         a.main-header__link(href="#") News
                     li
-                        a.main-header__link(href="#") Profile
+                        a.main-header__link(href="#") Profile   
             .main-header__contacts
-                a(href="tel:+544349000000") +544 3490 00000
+                a(href="tel:+544349000000") 
+                    include ../img/header/phone.svg
+                    span +544 3490 00000
                 span Звони скорее!
         h2.main-header__title Найдено 349 котов        
