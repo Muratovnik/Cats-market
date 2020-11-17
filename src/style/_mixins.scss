@@ -21,3 +21,16 @@
     padding: 0;
     list-style: none;
 }
+
+@mixin interaction (
+    $hover: .8,
+    $active: .6,
+) {
+    &:hover,
+    &:focus {
+        opacity: $hover;
+    }
+    &:active {
+        opacity: $active;
+    }
+}

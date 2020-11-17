@@ -1,0 +1,146 @@
+.main-header {
+    position: relative;
+    
+    color: var(--white-text);
+    background: {
+        image: linear-gradient(0deg, rgb(223, 10, 31) 8%, transparent 11%), /* Красная полоса - породолжение фона для широких экранов */
+        linear-gradient(90deg, rgba(16,12,9,1) 0%, rgba(48,40,31,1) 100%); /*  Породолжение фона для широких экранов */
+        repeat: repeat, repeat;
+        size: auto 100%;
+        position: center, bottom;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    /* Затемнение фона общего фона header'a */
+    &:after {
+        position: absolute;
+        content: "";
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(31, 32, 33, 0.79);
+
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+
+        padding: {
+            top: 40px;
+            bottom: 65px;
+        };
+
+        /* Фон с картинкой */
+        background: {
+            image: linear-gradient(rgba(31, 32, 33, 0.79) 100%), /* Затемнение фона */
+            url(../img/Header/banner-cat.png);
+            repeat: no-repeat;
+            size: auto 100%;
+            position: top;
+        };
+
+        /* Обрезка градиента - продолжения фона для header'a */
+        &:after {
+            position: absolute;
+            content: "";
+    
+            top: 0;
+            right: 100%;
+    
+            width: 100%;
+            height: 100%;
+    
+            background-color: #1C1C1C;
+    
+            z-index: 1;
+        }
+    }
+
+    
+}
+
+
+.main-header__wrap {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.main-header__logo {
+    @include interaction;
+}
+
+.main-header__nav {
+    margin-left: 120px;
+    ul {
+        @include clean_ul;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        li {
+            margin-right: 55px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.main-header__link {
+    white-space: nowrap;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        width: 0%;
+    
+        content: "";
+        bottom: -2px;
+        left: 0;
+    
+        border-top: 2px solid var(--white-text);
+        transition: width 0.2s ease;
+      }
+    
+      &:hover,
+      &:focus {
+        color: var(--white-text);
+    
+        &::after {
+          width: 100%;
+        }
+      }
+      &:active {
+          opacity: .9;
+      }
+}
+
+.main-header__contacts {
+    margin-left: auto;
+    position: relative;
+    a {
+        display: block;
+        @include font(24px, 29px, 700);
+    }
+    span {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.main-header__title {
+    margin: 0;
+}
+
