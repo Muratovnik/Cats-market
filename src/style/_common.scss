@@ -84,3 +84,37 @@ h2 {
 .js-bg {
     background: rgba(31, 32, 33, 1) !important;
 }
+
+
+.scrlltotop-wrapper{
+    display: none;
+	width: 59px;
+	height: 59px;
+	background-color: var(--blue-color);
+	cursor: pointer;
+	
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+}
+
+@media (min-width: 1160px){
+	.scrlltotop-wrapper{
+		right: 100px;
+		bottom: 100px;
+	}
+}
+
+.scrlltotop-icon{
+	width: 18px;
+	height: 18px;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+	z-index: 2;
+	position: absolute;
+	background-image: url("../img/MainContent/arrow-up.svg");
+	background-repeat: no-repeat;
+    background-position: center;
+}
