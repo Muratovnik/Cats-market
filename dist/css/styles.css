@@ -877,7 +877,8 @@ h2 {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 83px; }
 
 .catalog__grid {
   display: grid;
@@ -986,3 +987,99 @@ h2 {
   font-weight: 400;
   border: 1px solid #CACACA;
   padding: 24px 129px; }
+
+/*-------------------
+        footer
+---------------------*/
+.main-footer .container {
+  padding: 90px 80px;
+  color: #ffffff;
+  background-color: #1F2021;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.main-footer__slogan {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px; }
+
+.main-footer__appeal {
+  max-width: 400px; }
+  .main-footer__appeal span {
+    font-size: 28px;
+    line-height: 26px;
+    font-weight: 400; }
+
+.main-footer__email-sub {
+  border: none;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .main-footer__email-sub input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    outline: none;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    padding-left: 33px;
+    padding-right: 33px; }
+    .main-footer__email-sub input[type="email"] {
+      border: none;
+      border-radius: 10px;
+      margin-right: 10px;
+      min-width: 300px; }
+
+.checbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+  .checbox input:checked + .checkbox__text:before {
+    display: block; }
+
+.checkbox__text {
+  position: relative;
+  cursor: pointer;
+  padding-left: 36px; }
+  .checkbox__text::after {
+    content: "";
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    background-color: #6EBBD3;
+    border-radius: 3px;
+    z-index: 1; }
+  .checkbox__text::before {
+    content: "";
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/Footer/Check.svg);
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    z-index: 2; }
