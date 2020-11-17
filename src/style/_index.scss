@@ -53,6 +53,22 @@
 
 /* catalog */
 
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    grid-column-gap: 21px;
+    grid-row-gap: 27px;
+
+    margin-bottom: 70px;
+}
+
 .catalog__card {
     max-width: 380px;
 }
@@ -139,4 +155,17 @@
     width: 100%;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
+
+    &--disabled {
+        background-color: #1F2021;
+        pointer-events: none;
+    }
+}
+
+.catalog__more {
+    background-color: transparent !important;
+    color: var(--text-color);
+    font-weight: 400;
+    border: 1px solid #CACACA;
+    padding: 24px 129px;
 }

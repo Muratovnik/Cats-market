@@ -1,0 +1,23 @@
+mixin card(non_sale, cat, like, cost, dis, btn_txt)
+    .catalog__card
+        .catalog__img
+            span(class="catalog__sale " + non_sale) 40%
+            a(href='#', class="catalog__like " + like)
+                img(src="img/MainContent/heart.svg", alt="Лайк")
+            img(src=cat, alt="Красивый кот")
+        article.catalog__description
+            h4.catalog__title Кот полосатый
+            ul.catalog__list
+                li
+                    span Коричневый
+                    span окрас
+                li
+                    span 
+                        b 2 мес.
+                    span Возраст
+                li
+                    span 
+                        b 4
+                    span Кол-во лап
+            h4.catalog__cost= cost
+        a(href='#', class="catalog__btn btn " + dis)= btn_txt
