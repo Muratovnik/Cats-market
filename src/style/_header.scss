@@ -1,3 +1,7 @@
+/*-------------------
+        Header
+---------------------*/
+
 .main-header {
     position: relative;
     
@@ -78,10 +82,10 @@
 
 .main-header__logo {
     @include interaction;
+    margin-right: 120px;
 }
 
 .main-header__nav {
-    margin-left: 120px;
     ul {
         @include clean_ul;
         display: flex;

@@ -4,3 +4,37 @@ html(lang="en")
         include parts/_meta.pug
     body
         include parts/_header.pug
+        //- Content
+        main
+            .container
+                section.sorter
+                    span.sorter__title Сортировать по:
+                    ul.sorter__list
+                        li
+                            a.sorter__link(href="#") Цене
+                        li
+                            a.sorter__link(href="#") Возрасту
+                section.catalog
+                    .catalog__card
+                        .catalog__img
+                            span.catalog__sale -40%
+                            a(href='#').catalog__like
+                                img(src="img/MainContent/heart.svg", alt="Лайк")
+                            img(src="img/MainContent/cat1.png", alt="Красивый кот")
+                        article.catalog__description
+                            h4.catalog__title Кот полосатый
+                            ul.catalog__list
+                                li
+                                    span Коричневый
+                                    span окрас
+                                li
+                                    span 
+                                        b 2 мес.
+                                    span Возраст
+                                li
+                                    span 
+                                        b 4
+                                    span Кол-во лап
+                            h4.catalog__cost 30 000 руб.
+                        a.catalog__btn.btn Купить
+

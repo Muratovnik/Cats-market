@@ -46,3 +46,34 @@ h2 {
     @include font(38px, 46px, 700);
 }
 
+.btn {
+    display: block;
+    width: max-content;
+    box-sizing: border-box;
+
+    padding: {
+        top: 22px;
+        bottom: 24px;
+        left: 75px;
+        right: 75px;
+    };
+    border-radius: 10px;
+
+    color: var(--white-text);
+    text-align: center;
+    @include font(14px, 17px, 700);
+
+    background-color: var(--blue-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: #77cae4;
+    }
+    &:active {
+        background-color: #69c6e2;
+    }
+}
+
