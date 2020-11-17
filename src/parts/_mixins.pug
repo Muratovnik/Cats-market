@@ -13,11 +13,12 @@ mixin card(non_sale, cat, like, cost, dis, btn_txt)
                     span окрас
                 li
                     span 
-                        b 2 мес.
+                        b.catalog__age 2 мес.
                     span Возраст
                 li
                     span 
                         b 4
                     span Кол-во лап
-            h4.catalog__cost= cost
+            h4.catalog__cost= cost  
+                |  руб.
         a(href='#', class="catalog__btn btn " + dis)= btn_txt
