@@ -809,7 +809,9 @@ h2 {
   background-color: var(--blue-color);
   outline: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s; }
   .btn:hover, .btn:focus {
     background-color: #77cae4; }
   .btn:active {
@@ -877,6 +879,8 @@ h2 {
   margin-bottom: 50px; }
 
 .main-header__logo {
+  -webkit-transition: .2s;
+  transition: .2s;
   margin-right: 120px; }
   .main-header__logo:hover, .main-header__logo:focus {
     opacity: 0.8; }
@@ -1046,7 +1050,9 @@ h2 {
   position: absolute;
   opacity: .5;
   top: 34px;
-  right: 32px; }
+  right: 32px;
+  -webkit-transition: .2s;
+  transition: .2s; }
   .catalog__like--liked {
     opacity: 1; }
   .catalog__like:hover, .catalog__like:focus {
@@ -1115,7 +1121,12 @@ h2 {
   color: var(--text-color);
   font-weight: 400;
   border: 1px solid #CACACA;
-  padding: 24px 129px; }
+  padding: 24px 129px;
+  -webkit-transition: .2s;
+  transition: .2s; }
+  .catalog__more:hover, .catalog__more:focus {
+    -webkit-box-shadow: 0px 0px 2px 1px #CACACA;
+            box-shadow: 0px 0px 2px 1px #CACACA; }
 
 /*-------------------
         footer

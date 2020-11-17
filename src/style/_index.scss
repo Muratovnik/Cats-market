@@ -171,4 +171,10 @@
     font-weight: 400;
     border: 1px solid #CACACA;
     padding: 24px 129px;
+    transition: .2s;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0px 2px 1px #CACACA;
+    }
 }

@@ -26,6 +26,7 @@
     $hover: .8,
     $active: .6,
 ) {
+    transition: .2s;
     &:hover,
     &:focus {
         opacity: $hover;
