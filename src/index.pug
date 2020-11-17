@@ -12,11 +12,11 @@ html(lang="en")
                     span.sorter__title Сортировать по:
                     ul.sorter__list
                         li
-                            a.sorter__link(href="#") Цене
+                            a.sorter__link(href="#")#bycost Цене
                         li
                             a.sorter__link(href="#") Возрасту
                 section.catalog
-                    .catalog__grid
+                    .catalog__grid#parent
                         include parts/_mixins.pug
                         +card('', "img/MainContent/cat1.png", "", "30 000 руб.", "", "Купить")
                         +card('hidden', "img/MainContent/cat3.png", "catalog__like--liked", "40 000 руб.", "catalog__btn--disabled", "Продан")
