@@ -36,7 +36,7 @@ a {
 
 .container {
     box-sizing: content-box;
-    width: 1180px;
+    max-width: 1180px;
 
     padding: 0 20px;
     margin: 0 auto;

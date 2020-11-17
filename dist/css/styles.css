@@ -667,7 +667,7 @@ a {
 .container {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  width: 1180px;
+  max-width: 1180px;
   padding: 0 20px;
   margin: 0 auto; }
 
@@ -956,7 +956,8 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 50px; }
+    margin-right: 50px;
+    white-space: nowrap; }
     .catalog__list li:first-child {
       border-left: 4px solid var(--blue-color);
       padding-left: 18px;
@@ -1002,15 +1003,14 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.main-footer__slogan {
-  font-size: 48px;
-  line-height: 59px;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 20px; }
-
 .main-footer__appeal {
   max-width: 400px; }
+  .main-footer__appeal h2 {
+    font-size: 48px;
+    line-height: 59px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 20px; }
   .main-footer__appeal span {
     font-size: 28px;
     line-height: 26px;
@@ -1039,7 +1039,7 @@ h2 {
       border: none;
       border-radius: 10px;
       margin-right: 10px;
-      min-width: 300px; }
+      width: 300px; }
 
 .checbox input {
   position: absolute;
@@ -1059,8 +1059,6 @@ h2 {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     position: absolute;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     width: 18px;
     height: 18px;
     background-color: #6EBBD3;
@@ -1073,8 +1071,6 @@ h2 {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     position: absolute;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     width: 18px;
     height: 18px;
     background-image: url(../img/Footer/Check.svg);
@@ -1083,3 +1079,24 @@ h2 {
     background-repeat: no-repeat;
     display: none;
     z-index: 2; }
+
+/*-------------------
+    responsive
+---------------------*/
+@media screen and (max-width: 1180px) {
+  /* catalog */
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 70px; }
+  /* footer */
+  .main-footer .btn {
+    padding-right: 40px;
+    padding-left: 40px; }
+  .main-footer__email-sub input[type="email"] {
+    max-width: 265px; }
+  .main-footer__appeal {
+    max-width: 335px; }
+    .main-footer__appeal h2 {
+      font-size: 43px; }
+    .main-footer__appeal span {
+      font-size: 22px; } }

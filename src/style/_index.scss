@@ -129,6 +129,8 @@
         justify-content: center;
         margin-right: 50px;
 
+        white-space: nowrap;
+
         &:first-child {
             border-left: 4px solid var(--blue-color);
             padding-left: 18px;

@@ -12,16 +12,14 @@
         @include df-sb;
     }
 }
-
-.main-footer__slogan {
-    @include font(48px, 59px, 700);
-    margin: 0;
-    margin-bottom: 20px;
-}
-
 .main-footer__appeal {
     max-width: 400px;
 
+    h2 {
+        @include font(48px, 59px, 700);
+        margin: 0;
+        margin-bottom: 20px;
+    }
     span {
         @include font(28px, 26px, 400);
 
@@ -53,7 +51,7 @@
             border: none;
             border-radius: 10px;
             margin-right: 10px;
-            min-width: 300px;
+            width: 300px;
         }
     }
     
@@ -84,7 +82,6 @@
         transform: translateY(-50%);
 
         position: absolute;
-        box-sizing: border-box;
 
         width: 18px;
         height: 18px;
@@ -101,7 +98,7 @@
         transform: translateY(-50%);
 
         position: absolute;
-        box-sizing: border-box;
+
         width: 18px;
         height: 18px;
 

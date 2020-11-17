@@ -1,0 +1,50 @@
+/*-------------------
+    responsive
+---------------------*/
+
+@media screen and (max-width: 1180px) {
+
+    /* catalog */
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 70px;
+    }
+
+    /* footer */
+    .main-footer {
+        .btn {
+            padding: {
+                right: 40px;
+                left: 40px;
+            };
+        }
+    }
+    .main-footer__email-sub {
+
+        input {
+            &[type="email"] {
+                max-width: 265px;
+            }
+    }
+}
+
+    .main-footer__appeal {
+        max-width: 335px;
+    
+        h2 {
+            font-size: 43px;
+        }
+        span {
+            font-size: 22px;
+    
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 750px) {
+
+}
