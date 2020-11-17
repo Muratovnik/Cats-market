@@ -1,0 +1,45 @@
+/*-------------------
+    common styles
+---------------------*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
+    font-family: $default_font;
+    @include font;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    box-sizing: content-box;
+    width: 1180px;
+
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+

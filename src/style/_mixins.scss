@@ -1,0 +1,23 @@
+/*-------------------
+    scss mixins
+---------------------*/
+
+@mixin font(
+        $size: 18px,
+        $lineh: 22px,
+        $font_w: 400,) {
+            font-size: $size;
+            line-height: $lineh;
+            font-weight: $font_w;
+}
+
+@mixin df-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin clean_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

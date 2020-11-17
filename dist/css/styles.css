@@ -615,3 +615,55 @@ template {
  */
 [hidden] {
   display: none; }
+
+/*-------------------
+    scss mixins
+---------------------*/
+/*-------------------
+    scss variables 
+---------------------*/
+/*-------------------
+    css variables 
+---------------------*/
+:root {
+  --text-color: rgba(0, 0, 0, 1); }
+
+/*-------------------
+    common styles
+---------------------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400; }
+
+a {
+  text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+.container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 1180px;
+  padding: 0 20px;
+  margin: 0 auto; }
