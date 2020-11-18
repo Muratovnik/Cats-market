@@ -160,7 +160,7 @@
     border-top-left-radius: 0px;
 
     &--disabled {
-        background-color: #1F2021;
+        background-color: #1F2021 !important;
         pointer-events: none;
     }
 }

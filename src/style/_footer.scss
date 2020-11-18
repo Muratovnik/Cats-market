@@ -26,6 +26,10 @@
     }
 }
 
+.main-footer__subscribe {
+    width: max-content;
+}
+
 .main-footer__email-sub {
     border: none;
     margin: 0;
@@ -48,6 +52,7 @@
         };
 
         &[type="email"] {
+            display: block;
             border: none;
             border-radius: 10px;
             margin-right: 10px;

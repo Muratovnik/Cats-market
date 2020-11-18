@@ -93,7 +93,8 @@ h2 {
 	background-color: var(--blue-color);
 	cursor: pointer;
 	
-	position: fixed;
+    position: fixed;
+    z-index: 50;
 	right: 15px;
 	bottom: 15px;
 }

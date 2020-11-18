@@ -1,0 +1,75 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* styles for ie11 */
+
+    .btn {
+        color: #ffffff;
+    
+        background-color: #6EBBD3;
+    }
+
+    .main-header {
+        * {
+            color: #ffffff !important;
+        }
+        .container {
+            background-image: linear-gradient(rgba(31, 32, 33, 0.79) 100%) !important;
+
+            &:after {
+                position: absolute;
+                content: "";
+        
+                bottom: 0;
+                right: 0;
+        
+                width: 100%;
+                height: 100%;
+        
+                background-image: url(../img/Header/banner-cat.png);
+        
+                z-index: -2;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 100%;
+
+                background-color: rgba(31, 32, 33, 0.79);
+
+                z-index: -1;
+            }
+        }
+    }
+
+
+    .catalog__grid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+    }
+    .catalog__card {
+        margin-bottom: 27px;
+    }
+    .catalog__sale {
+        color: #ffffff;
+    }
+
+    .catalog__list  {
+        li {
+            &:first-child {
+                border-left: 4px solid #6EBBD3;
+            }
+        
+        }
+    }
+
+    .catalog__more {
+        color: #000000;
+    }
+
+}
